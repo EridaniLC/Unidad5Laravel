@@ -17,19 +17,28 @@ class ClientSeeder extends Seeder
     {
         $client = new Client();
 
-        $client-> name = "Eridani";
-        $client-> phone_numer = "6121940136";
-        $client-> email = "eridani@gmail.com";
-        
+        $client->name = "Eridani Lucero";
+        $client->phone_number = "6122345367";
+        $client->email = "eridani@uabcs.mx";
         $client->save();
+
 
         $client = new Client();
 
-        $client-> name = "nani";
-        $client-> phone_numer = "6121940136";
-        $client-> email = "nani@gmail.com";
-        
+        $client->name = "Nani Lucero";
+        $client->phone_number = "6122345367";
+        $client->email = "nani@uabcs.mx";
         $client->save();
-
     }
 }
+
+
+
+
+
+
+
+
+
+
+
