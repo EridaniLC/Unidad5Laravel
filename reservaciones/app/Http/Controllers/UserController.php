@@ -35,7 +35,8 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        echo $request->name;
+        echo $request['name'];
+        //otro ejemplo: echo $request->name;
     }
 
     /**

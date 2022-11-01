@@ -13,8 +13,9 @@ class ClientController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {                                            
+    {
         return Client::with('reservations')->get();
+
     }
 
     /**
@@ -47,7 +48,6 @@ class ClientController extends Controller
     public function show($id)
     {
         return Client::with('reservations')->find($id);
-        
     }
 
     /**
