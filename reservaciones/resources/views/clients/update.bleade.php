@@ -9,6 +9,7 @@
 <body>
 
     <form method="post" action="{{url('clients/')}}">
+    @method('PUT')
     @csrf
 
     <label>
@@ -26,8 +27,8 @@
     </label>
     <input type="text" placeholder="612XXXXX" name="phone_number"value="{{$client->phone_number}}">
 
-
-
+    <input type="text" placeholder="id" name="id"value="{{$client->id}}">
+    
     <button type="submit">
         Actualizar
     </button>
