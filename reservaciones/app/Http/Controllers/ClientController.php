@@ -14,9 +14,9 @@ class ClientController extends Controller
      */
     public function index()
     {
-        $clients = Client::with('reservations')->get;
+        $clients = Client::with('reservations')->get();
 
-        return view('show_clients', compact('clients'));
+        return view('clients.show_clients', compact('clients'));
 
     }
 
@@ -76,7 +76,7 @@ class ClientController extends Controller
     {
         $clients = Client::with('reservations')->find($client);
 
-        return view('update_client', compact('client'));
+        return view('clients.update_client', compact('client'));
     }
 
     /**

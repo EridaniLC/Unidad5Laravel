@@ -19,6 +19,11 @@ use App\Http\Controllers\ReservationController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/login', function () {
+    return view('welcome');
+})->name('login');
+
 Route::get('saludo', function(){
     echo "Hola";
 });
@@ -36,6 +41,7 @@ Route::get('clients/{id}',[ClientController::class, 'show']);
 Route::post('clients/',[ClientController::class, 'store'] );
 Route::get('clients/edit/{id}',[ClientController::class, 'edit'] );
 Route::put('clients/',[ClientController::class, 'update'] );
+
 
 Route::get('reservations/',[ReservationController::class, 'index']);
 Route::get('reservations/{id}',[ReservationController::class, 'show']);

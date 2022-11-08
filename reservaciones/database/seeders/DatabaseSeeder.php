@@ -15,13 +15,15 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            ClientSeeder::class,
-        ]);
-        $this->call([
-            ReservationSeeder::class,
-        ]);
-        // \App\Models\User::factory(10)->create();
+            //ReservationSeeder::class,
+            UserSeeder::class,
 
+        ]);
+       /* $this->call([
+            ReservationSeeder::class,
+        ]);*/
+        // \App\Models\User::factory(10)->create();
+        
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
